@@ -1,0 +1,93 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $color2;
+  width: 100%;
+  margin: auto;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  & ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  & li {
+    font-size: 1.5rem;
+    height: 50px;
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+  & a {
+    height: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    transition: 300ms;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+      background: $color1;
+    }
+  }
+  & .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #4840a370;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    & li {
+      width: 100%;
+    }
+    & a {
+      width: 100%;
+    }
+    & .brandingNav {
+      font-size: 1.1rem;
+    }
+  }
+  & #menu {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  #menu {
+    margin-left: auto;
+  }
+  .hideOnMobile {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  nav .sidebar {
+    width: 100%;
+  } 
+  nav #menu {
+    display: block;
+  }
+}
+
+.info {
+  height: 720px;
+  border: 1px solid;
+  margin-top: 70px;
+}
+
+.about,
+.contact {
+  margin-top: 0;
+}

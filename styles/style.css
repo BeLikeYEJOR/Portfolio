@@ -1,0 +1,130 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #574fb4;
+  width: 100%;
+  margin: auto;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  font-size: 1.5rem;
+  height: 50px;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+nav a {
+  height: 100%;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  transition: 300ms;
+  position: relative;
+}
+nav a:hover {
+  cursor: pointer;
+  background: #f9cd6a;
+}
+nav .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(72, 64, 163, 0.4392156863);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+nav .sidebar li {
+  width: 100%;
+}
+nav .sidebar a {
+  width: 100%;
+}
+nav .sidebar .brandingNav {
+  font-size: 1.1rem;
+}
+nav #menu {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  #menu {
+    margin-left: auto;
+  }
+  .hideOnMobile {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  nav .sidebar {
+    width: 100%;
+  }
+  nav #menu {
+    display: block;
+  }
+}
+.info {
+  height: 720px;
+  border: 1px solid;
+  margin-top: 70px;
+}
+
+.about,
+.contact {
+  margin-top: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  background-color: #718bc4;
+  color: lightblue;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth !important;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+  .nav {
+    min-height: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

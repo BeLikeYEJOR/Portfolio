@@ -1,0 +1,45 @@
+$color1: #f9cd6a;
+$color2: #574fb4;
+$color3: #718bc4;
+$color4: #f8eff7;
+$color5: #d4d8dd;
+
+@import "./TopBar";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+// main setup
+body,
+html {
+  background-color: $color3;
+  color: lightblue;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth !important;
+}
+
+li {
+  list-style: none;
+}
+// styles the buttons
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+  .nav {
+    min-height: 50px;
+  }
+}
